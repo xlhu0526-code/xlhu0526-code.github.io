@@ -9,4 +9,6 @@ layout: home
 
 👉 [**查看我的简历**](/resume.html)
 
+📚 [**面试题**](/interview/)
+
 ---
