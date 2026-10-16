@@ -3,176 +3,386 @@ title: 简历
 ---
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>胡欣立 · 全栈开发工程师 · 简历</title>
-<style>
-  :root{
-    --ink:#1f2430; --sub:#5b6472; --line:#e6e9ef; --brand:#2f6fed; --bg:#f4f6fa;
-  }
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
-  body{
-    background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.65; font-size:15px; padding:28px 14px;
-  }
-  .page{
-    max-width:820px; margin:0 auto; background:#fff; border-radius:14px;
-    box-shadow:0 8px 30px rgba(31,36,48,.08); overflow:hidden;
-  }
-  header{
-    padding:30px 38px 24px; border-bottom:1px solid var(--line);
-    background:linear-gradient(135deg,#f7f9ff 0%,#ffffff 60%);
-  }
-  .back{
-    display:inline-block; margin-bottom:14px; color:var(--brand); font-size:13.5px;
-    text-decoration:none; font-weight:600;
-  }
-  .back:hover{text-decoration:underline;}
-  .name{font-size:30px; font-weight:800; letter-spacing:2px; margin:0;}
-  .role{color:var(--brand); font-weight:600; margin:6px 0 14px; font-size:15px;}
-  .contact{display:flex; flex-wrap:wrap; gap:8px 20px; color:var(--sub); font-size:14px;}
-  .contact a{color:var(--sub); text-decoration:none; border-bottom:1px solid transparent;}
-  .contact a:hover{color:var(--brand); border-bottom-color:var(--brand);}
-  .contact .item::before{content:""; display:inline-block; width:6px; height:6px; border-radius:50%;
-    background:var(--brand); margin-right:8px; vertical-align:1px;}
-  main{padding:8px 38px 34px;}
-  section{margin-top:22px;}
-  h2{
-    font-size:16px; margin:0 0 12px; padding-left:11px; position:relative;
-    letter-spacing:1px; color:var(--ink);
-  }
-  h2::before{content:""; position:absolute; left:0; top:2px; bottom:2px; width:4px;
-    border-radius:2px; background:var(--brand);}
-  .row{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap;}
-  .row .t{font-weight:700;}
-  .row .d{color:var(--sub); font-size:13.5px; white-space:nowrap;}
-  .muted{color:var(--sub); font-size:13.5px;}
-  ul{margin:8px 0 0; padding-left:20px;}
-  li{margin:4px 0;}
-  .block{margin-top:14px;}
-  .block:first-child{margin-top:0;}
-  .skills{display:grid; grid-template-columns:96px 1fr; gap:6px 14px;}
-  .skills .k{color:var(--sub); font-weight:600;}
-  .tags span{
-    display:inline-block; background:#eef3ff; color:#2a56c6; border-radius:6px;
-    padding:2px 9px; margin:2px 6px 2px 0; font-size:13px;
-  }
-  footer{padding:14px 38px 26px; color:#9aa3b2; font-size:12px; text-align:center; border-top:1px solid var(--line);}
-  @media print{
-    body{background:#fff; padding:0; font-size:12.5px;}
-    .page{box-shadow:none; border-radius:0; max-width:100%;}
-    header{padding:18px 26px 14px;} main{padding:4px 26px 16px;}
-    h2{margin-bottom:8px;} section{margin-top:14px;}
-    @page{margin:12mm;}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>胡欣立 · 全栈开发工程师 · 简历</title>
+  <style>
+    :root {
+      --ink: #1f2430;
+      --sub: #5b6472;
+      --line: #e6e9ef;
+      --brand: #2f6fed;
+      --bg: #f4f6fa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      font-size: 15px;
+      padding: 28px 14px;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(31, 36, 48, .08);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 30px 38px 24px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #f7f9ff 0%, #ffffff 60%);
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--brand);
+      font-size: 13.5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    .name {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    .role {
+      color: var(--brand);
+      font-weight: 600;
+      margin: 6px 0 14px;
+      font-size: 15px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    .contact a {
+      color: var(--sub);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .contact a:hover {
+      color: var(--brand);
+      border-bottom-color: var(--brand);
+    }
+
+    .contact .item::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brand);
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+    main {
+      padding: 8px 38px 34px;
+    }
+
+    section {
+      margin-top: 22px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 0 0 12px;
+      padding-left: 11px;
+      position: relative;
+      letter-spacing: 1px;
+      color: var(--ink);
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      bottom: 2px;
+      width: 4px;
+      border-radius: 2px;
+      background: var(--brand);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .row .t {
+      font-weight: 700;
+    }
+
+    .row .d {
+      color: var(--sub);
+      font-size: 13.5px;
+      white-space: nowrap;
+    }
+
+    .muted {
+      color: var(--sub);
+      font-size: 13.5px;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .block {
+      margin-top: 14px;
+    }
+
+    .block:first-child {
+      margin-top: 0;
+    }
+
+    .grp {
+      margin-top: 6px;
+    }
+
+    .grp>.lbl {
+      display: block;
+      margin-top: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--brand);
+      letter-spacing: 1px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 6px 14px;
+    }
+
+    .skills .k {
+      color: var(--sub);
+      font-weight: 600;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #eef3ff;
+      color: #2a56c6;
+      border-radius: 6px;
+      padding: 2px 9px;
+      margin: 2px 6px 2px 0;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 14px 38px 26px;
+      color: #9aa3b2;
+      font-size: 12px;
+      text-align: center;
+      border-top: 1px solid var(--line);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+        font-size: 12.5px;
+      }
+
+      .page {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+      }
+
+      header {
+        padding: 18px 26px 14px;
+      }
+
+      main {
+        padding: 4px 26px 16px;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+      }
+
+      section {
+        margin-top: 14px;
+      }
+
+      @page {
+        margin: 12mm;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="page">
+  <div class="page">
 
-  <header>
-    <a class="back" href="/">← 返回首页</a>
-    <h1 class="name">胡欣立</h1>
-    <div class="role">全栈开发工程师 · Full-stack Developer</div>
-    <div class="contact">
-      <span class="item">18163004665</span>
-      <span class="item"><a href="mailto:1659806226@qq.com">1659806226@qq.com</a></span>
-      <span class="item"><a href="https://github.com/xlhu0526-code" target="_blank" rel="noopener">github.com/xlhu0526-code</a></span>
-      <span class="item">期望薪资：25K 以上</span>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <h2>个人简介</h2>
-      <p style="margin:0">软件工程硕士，具备前端与后端双重开发经验，能够独立完成从页面交互到服务端接口的完整开发。熟悉 Java / Spring Boot 后端技术栈与 React / JavaScript 前端技术栈，注重代码质量与工程规范，习惯用文档沉淀问题与方案。</p>
-    </section>
-
-    <section>
-      <h2>教育背景</h2>
-      <div class="row">
-        <span class="t">西安电子科技大学 · 软件工程 · 硕士</span>
-        <span class="d">2019.09 – 2022.06</span>
+    <header>
+      <a class="back" href="/">← 返回首页</a>
+      <h1 class="name">胡欣立</h1>
+      <div class="role">全栈开发工程师 · Full-stack Developer</div>
+      <div class="contact">
+        <span class="item">18163004665</span>
+        <span class="item"><a href="mailto:1659806226@qq.com">1659806226@qq.com</a></span>
+        <span class="item"><a href="https://github.com/xlhu0526-code" target="_blank"
+            rel="noopener">github.com/xlhu0526-code</a></span>
+        <span class="item">期望薪资：25K </span>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <h2>专业技能</h2>
-      <div class="skills">
-        <div class="k">后端</div>
-        <div class="tags"><span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>MyBatis-Plus</span><span>Sa-Token</span><span>Redis</span><span>Maven</span><span>RESTful API</span></div>
-        <div class="k">前端</div>
-        <div class="tags"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>HTML / CSS</span></div>
-        <div class="k">其他</div>
-        <div class="tags"><span>MySQL</span><span>Git</span><span>C / C++</span><span>Linux</span></div>
-      </div>
-    </section>
+    <main>
+      <section>
+        <h2>个人简介</h2>
+        <p style="margin:0">软件工程硕士，具备前端与后端双重开发经验，能够独立完成从页面交互到服务端接口的完整开发。熟悉 Java / Spring Boot 后端技术栈与 React / JavaScript
+          前端技术栈，注重代码质量与工程规范，习惯用文档沉淀问题与方案。</p>
+      </section>
 
-    <section>
-      <h2>工作经历</h2>
-
-      <div class="block">
+      <section>
+        <h2>教育背景</h2>
         <div class="row">
-          <span class="t">华为 OD · 后端开发工程师</span>
-          <span class="d">2024.08 – 至今</span>
+          <span class="t">西安电子科技大学 · 软件工程 · 硕士</span>
+          <span class="d">2019.09 – 2022.06</span>
         </div>
-        <ul>
-          <li>参与后台服务的设计与开发，基于 Java / Spring Boot 技术栈实现业务接口与数据流转；</li>
-          <li>使用 MyBatis-Plus 完成数据持久化，Redis 承担缓存与会话/鉴权状态存储；</li>
-          <li>负责接口联调、异常与跨域处理，配合测试完成需求交付与线上问题排查。</li>
-        </ul>
-      </div>
+      </section>
 
-      <div class="block">
-        <div class="row">
-          <span class="t">北京三快在线科技有限公司（美团）· 前端开发工程师</span>
-          <span class="d">2022.07 – 2024.05</span>
+      <section>
+        <h2>专业技能</h2>
+        <div class="skills">
+          <div class="k">后端</div>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>Spring
+              MVC</span><span>MyBatis-Plus</span><span>Sa-Token</span><span>Redis</span><span>gRPC</span><span>Protobuf</span><span>BRPC</span><span>Maven</span><span>RESTful
+              API</span></div>
+          <div class="k">前端</div>
+          <div class="tags"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>HTML / CSS</span>
+          </div>
+          <div class="k">其他</div>
+          <div class="tags"><span>MySQL</span><span>Git</span><span>C / C++</span><span>Linux</span></div>
         </div>
-        <ul>
-          <li>负责业务前端页面与组件的开发与维护，基于 React / JavaScript 技术栈；</li>
-          <li>参与组件化与工程化建设，提升页面开发效率与代码复用性；</li>
-          <li>与产品、后端协作完成需求交付，跟进线上问题的定位与修复。</li>
-        </ul>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <h2>项目经历</h2>
+      <section>
+        <h2>工作经历</h2>
 
-      <div class="block">
-        <div class="row">
-          <span class="t">美团优选小程序 · 前端开发</span>
-          <span class="d">美团期间</span>
+        <div class="block">
+          <div class="row">
+            <span class="t">华为 OD · 后端开发工程师</span>
+            <span class="d">2024.08 – 至今</span>
+          </div>
+          <ul>
+            <li>参与后台服务的设计与开发，基于 Java / Spring Boot 技术栈实现业务接口与数据流转；</li>
+            <li>使用 MyBatis-Plus 完成数据持久化，Redis 承担缓存与会话/鉴权状态存储；</li>
+            <li>负责接口联调、异常与跨域处理，配合测试完成需求交付与线上问题排查。</li>
+          </ul>
         </div>
-        <div class="muted">微信小程序 · WXML / WXSS / JavaScript · 组件化</div>
-        <ul>
-          <li>负责美团优选小程序订单链路页面的开发与迭代，覆盖下单、订单列表、订单详情等核心页面；</li>
-          <li>基于小程序原生框架进行组件化开发，抽离可复用的订单业务组件，提升多页面复用率与开发效率；</li>
-          <li>参与页面加载与交互体验优化，处理下拉刷新、分页加载、弱网与异常态等边界场景；</li>
-          <li>与产品、后端、测试协作完成需求评审、接口联调与线上问题排查。</li>
-        </ul>
-      </div>
 
-      <div class="block">
-        <div class="row">
-          <span class="t">华为网络协议仿真业务 · 后端开发</span>
-          <span class="d">华为 OD 期间</span>
+        <div class="block">
+          <div class="row">
+            <span class="t">北京三快在线科技有限公司（美团）· 前端开发工程师</span>
+            <span class="d">2022.07 – 2024.05</span>
+          </div>
+          <ul>
+            <li>负责业务前端页面与组件的开发与维护，基于 React / JavaScript 技术栈；</li>
+            <li>参与组件化与工程化建设，提升页面开发效率与代码复用性；</li>
+            <li>与产品、后端协作完成需求交付，跟进线上问题的定位与修复。</li>
+          </ul>
         </div>
-        <div class="muted">Java · Spring Boot · MyBatis-Plus · MySQL · Redis</div>
-        <ul>
-          <li>参与网络协议仿真平台的后端设计与开发，基于 Java / Spring Boot 实现业务接口与服务侧逻辑；</li>
-          <li>负责协议数据的建模、处理与持久化，使用 MyBatis-Plus / MySQL 完成数据存取，Redis 承担缓存；</li>
-          <li>支撑仿真任务流程的接口联调与异常处理，关注服务稳定性与代码规范；</li>
-          <li>参与需求分析、方案设计与代码评审，沉淀接口文档与问题排查记录。</li>
-        </ul>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>胡欣立 · 全栈开发工程师 · 更新于 2026-10-03</footer>
-</div>
+      <section>
+        <h2>项目经历</h2>
+
+        <div class="block">
+          <div class="row">
+            <span class="t">美团优选小程序 · 前端开发</span>
+            <span class="d">美团期间</span>
+          </div>
+          <div class="muted">微信小程序 · WXML / WXSS / JavaScript · 组件化</div>
+          <ul>
+            <li>负责美团优选小程序订单链路页面的开发与迭代，覆盖下单、订单列表、订单详情等核心页面；</li>
+            <li>基于小程序原生框架进行组件化开发，抽离可复用的订单业务组件，提升多页面复用率与开发效率；</li>
+            <li>参与页面加载与交互体验优化，处理下拉刷新、分页加载、弱网与异常态等边界场景；</li>
+            <li>与产品、后端、测试协作完成需求评审、接口联调与线上问题排查。</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <div class="row">
+            <span class="t">Crystal NCE 网络仿真平台 · 全栈开发</span>
+            <span class="d">2024.09 – 2026.10</span>
+          </div>
+          <div class="muted">Java · Spring Boot · Redis · BRPC · Protobuf · 大型分布式仿真平台</div>
+          <p style="margin:8px 0 0">面向运营商网络的大型分布式仿真平台，支持数百网元规模的网络拓扑仿真验证，覆盖网络故障演练、流量路径验证、路由仿真等场景。</p>
+          <div class="grp"><span class="lbl">职责</span>
+            <ul>
+              <li>负责仿真模块的开发与维护，涵盖流量仿真、路由仿真、S&amp;E 仿真等功能；</li>
+              <li>参与仿真模块性能优化，解决内存溢出（OOM）、CPU 资源消耗等问题；</li>
+              <li>参与 S&amp;E 流量仿真技术方案的设计与评审。</li>
+            </ul>
+          </div>
+          <div class="grp"><span class="lbl">亮点</span>
+            <ul>
+              <li><b>分布式任务调度框架：</b>基于 Redis 分布式锁 + 定时轮询，保证任务在队列中的有序调度；基于注解的事件驱动通信层（注解扫描 + 反射 + Handler 注册），解耦 Launch /
+                Terminate / Release 等多种任务生命周期事件；使用 BRPC 发送事件，通过 Protobuf → JSON → 领域对象的反序列化链路，实现 gRPC 消息到业务处理方法的自动路由；
+              </li>
+              <li><b>异步任务完成检测：</b>针对长时仿真任务，采用进度线程 + 数据库轮询，结合数据库状态机（init / launch / inprogress / success / failed /
+                stopped）跟踪任务状态；</li>
+              <li><b>自适应资源分配：</b>依据网元数量分档设置内存、CPU 等资源，随任务生命周期完成资源的分配与释放；利用 Redis 锁与资源分配表解决多任务并发执行的资源竞争问题。</li>
+            </ul>
+          </div>
+          <div class="grp"><span class="lbl">成果</span>
+            <ul>
+              <li>平台支撑 500+ 网元规模仿真，稳定运行超两年；</li>
+              <li>性能优化后 OOM 问题消除，大规模仿真内存峰值显著降低；</li>
+              <li>自适应资源分配方案使多任务并发资源冲突降为 0；</li>
+              <li>注解驱动事件架构使新增事件类型无需改动核心逻辑，扩展效率显著提升。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>胡欣立 · 全栈开发工程师 · 更新于 2026-10-16</footer>
+  </div>
 </body>
+
 </html>
